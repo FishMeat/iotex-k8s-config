@@ -10,7 +10,9 @@
 2. 替换`externalHost`和`producerPrivKey`，配置好你的`config.yaml`
 
 3. 创建configmap  
-`kubectl create configmap iotex-mainnet-config	 --from-file=your-path/config.yaml --from-file=your-path/genesis.yaml`
+```
+kubectl create configmap iotex-mainnet-config	--from-file=your-path/config.yaml --from-file=your-path/genesis.yaml
+```
 
 ## 创建`iotex-service`服务
 
@@ -18,7 +20,13 @@
 
 2. 修改`iotex-k8s-config.yaml`,修改`loadBalancerIP`字段为你的静态IP地址,修改`image`字段为对应的`iotex-core`镜像仓库
 
-3. 创建服务`kubectl create -f iotex-k8s-config.yaml`
+3. 创建服务
+```
+kubectl create -f iotex-k8s-config.yaml
+```
 
-4. 等服务启动，查看服务`kubectl get svc iotex-service`
+4. 等服务启动，查看服务命令
+```
+kubectl get svc iotex-service
+```
 
