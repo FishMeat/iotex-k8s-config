@@ -11,7 +11,9 @@
 
 3. 创建configmap  
 ```
-kubectl create configmap iotex-mainnet-config	--from-file=your-path/config.yaml --from-file=your-path/genesis.yaml
+kubectl create configmap iotex-mainnet-config \
+--from-file=your-path/config.yaml \
+--from-file=your-path/genesis.yaml
 ```
 
 ## 创建`iotex-service`服务
