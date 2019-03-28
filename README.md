@@ -2,7 +2,7 @@
 ## 先决条件
 1. 当前已经拥有k8s集群，kubectl 已经连接至对应的Cluster
 
-2. 拥有一个静态外部IP地址，没有的话，可以相应云提供商处申请
+2. 拥有一个静态外部IP地址，没有的话，可以向相应的云提供商处申请
 
 ## 创建configmap
 1. 从[iotex-testnet](https://github.com/iotexproject/iotex-testnet)处拉取`config.yaml`和`genesis.yaml`
