@@ -5,7 +5,7 @@
 2. 拥有一个静态外部IP地址，没有的话，可以向相应的云提供商处申请
 
 ## 创建`configmap`
-1. 从[iotex-testnet](https://github.com/iotexproject/iotex-testnet)处拉取`config.yaml`和`genesis.yaml`
+1. 从[iotex-bootstrap](https://github.com/iotexproject/iotex-testnet)处拉取`config.yaml`和`genesis.yaml`
 
 2. 替换`externalHost`和`producerPrivKey`，配置好你的`config.yaml`
 
